@@ -20,6 +20,10 @@ const Login = () => {
         console.log('Successfull!', result)
     }
 
+    const handleSubmitWithSignInWithGoogle = async () => {
+        await firebase.signInWithGoogle()
+    }
+
   return (
     <div className="container mt-5">
       <Form onSubmit={handleSubmit}>
@@ -50,6 +54,9 @@ const Login = () => {
           Login
         </Button>
       </Form>
+
+      <h4 className="mt-5 mb-5">OR</h4>
+      <Button onClick={handleSubmitWithSignInWithGoogle} variant="danger">Sign In With Google</Button>
     </div>
   );
 };
