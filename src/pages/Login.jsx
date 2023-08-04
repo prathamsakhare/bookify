@@ -12,9 +12,9 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log('Signing up a user...')
+        console.log('logging in a user...')
         
-        const result = await firebase.signUpUserWithEmailAndPassword(email, password)
+        const result = await firebase.signInUserWithEmailAndPassword(email, password)
 
 
         console.log('Successfull!', result)
