@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useFirebase } from "../context/Firebase";
 
-const Register = () => {
+const Login = () => {
   const firebase = useFirebase();
 
   const [email, setEmail] = useState("");
@@ -18,9 +18,6 @@ const Register = () => {
 
 
         console.log('Successfull!', result)
-
-        setEmail('');
-        setPassword('')
     }
 
   return (
@@ -50,11 +47,11 @@ const Register = () => {
         </Form.Group>
         
         <Button variant="primary" type="submit">
-          Create Account
+          Login
         </Button>
       </Form>
     </div>
   );
 };
 
-export default Register;
+export default Login;
