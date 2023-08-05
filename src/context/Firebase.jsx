@@ -8,11 +8,11 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
-  onAuthStateChanged,
+  onAuthStateChanged
 } from "firebase/auth";
 
 // ! Firestore
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
 // ! Firebase Storage
 import {getStorage, ref, uploadBytes} from 'firebase/storage';
@@ -84,6 +84,10 @@ export const FirebaseProvider = (props) => {
 
   };
 
+  const listAllBooks = () => {
+    return getDocs(collection(firestore, 'books'))
+  }
+
   return (
     <FirebaseContext.Provider
       value={{
@@ -92,6 +96,7 @@ export const FirebaseProvider = (props) => {
         signInWithGoogle,
         isLoggedIn,
         handleCreateNewListing,
+        listAllBooks
       }}
     >
       {props.children}

@@ -5,7 +5,7 @@ const NavbarPage = () => {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home">Bookify</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link>Home</Nav.Link>
           <Nav.Link href="/book/list">Add Listing</Nav.Link>
