@@ -15,7 +15,7 @@ import {
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
 // ! Firebase Storage
-import {getStorage, ref, uploadBytes} from 'firebase/storage';
+import {getStorage, ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 
 
 const FirebaseContext = createContext(null);
@@ -88,6 +88,10 @@ export const FirebaseProvider = (props) => {
     return getDocs(collection(firestore, 'books'))
   }
 
+  const getImageURL = (path) => {
+    return getDownloadURL(ref(storage), path)
+  }
+
   return (
     <FirebaseContext.Provider
       value={{
@@ -96,7 +100,8 @@ export const FirebaseProvider = (props) => {
         signInWithGoogle,
         isLoggedIn,
         handleCreateNewListing,
-        listAllBooks
+        listAllBooks,
+        getImageURL
       }}
     >
       {props.children}

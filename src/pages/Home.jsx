@@ -8,9 +8,10 @@ const Home = () => {
     const firebase = useFirebase();
 
     useEffect(() => {
-        firebase.listAllBooks().then((books) => setBooks(books.docs))
-    })
-  return (
+        firebase.listAllBooks().then((book) => setBooks(book.docs))
+    }, [])
+    console.log(books)
+    return (
     <div className='container mt-5'>
         {books?.map(book => <BookCard {...book.data()} />)}
         
