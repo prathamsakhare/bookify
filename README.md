@@ -1,4 +1,4 @@
-# 📚 Book Record Management App
+# 📚 Bookify - Book Record Management App
 
 ## Table of Contents
 
