@@ -29,7 +29,6 @@ The Book Record Management App is a full-stack web application built with Fireba
 
 - **Frontend**:
   - React.js: A JavaScript library for building user interfaces.
-  - Redux: A state management library for predictable state containers.
   - Axios: A promise-based HTTP client for making requests to your Firebase backend.
   - React Router: For handling routing in the single-page application.
   - Bootstrap: A popular CSS framework for a sleek and modern design.
@@ -84,7 +83,6 @@ Follow these steps to set up and run the project locally on your machine.
 1. **Register and log in** to your account.
 2. **Add books** to your collection by providing book details and uploading cover images.
 3. **Edit or delete books** as needed.
-4. Use the **search**, **filter**, and **sort** features to organize and find books in your collection.
 
 ## 🌐 Deployment
 
