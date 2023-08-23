@@ -22,7 +22,7 @@ const FirebaseContext = createContext(null);
 
 const firebaseConfig = {
   apiKey: "AIzaSyA_EOs2q8V_Hi0pOVdyz18u5WjgcDTk-xE",
-  authDomain: "bookify-77802.firebaseapp.com",
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
   projectId: "bookify-77802",
   storageBucket: "bookify-77802.appspot.com",
   messagingSenderId: "84000668213",

@@ -7,7 +7,7 @@ const NavbarPage = () => {
       <Container>
         <Navbar.Brand href="#home">Bookify</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link>Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/book/list">Add Listing</Nav.Link>
         </Nav>
       </Container>

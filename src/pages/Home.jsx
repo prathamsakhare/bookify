@@ -12,8 +12,8 @@ const Home = () => {
     }, [])
     console.log(books)
     return (
-    <div className='container mt-5'>
-        {books?.map(book => <BookCard {...book.data()} />)}
+    <div className='container mt-5 d-flex gap-5 flex-wrap'>
+        {books?.map(book => <BookCard key={book.id} id={book.id} {...book.data()} />)}
         
     </div>
   )
