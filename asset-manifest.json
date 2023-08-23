@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bookify/static/css/main.da3089f3.css",
+    "main.js": "/bookify/static/js/main.8725dca4.js",
+    "static/js/787.f30f0f50.chunk.js": "/bookify/static/js/787.f30f0f50.chunk.js",
+    "index.html": "/bookify/index.html",
+    "main.da3089f3.css.map": "/bookify/static/css/main.da3089f3.css.map",
+    "main.8725dca4.js.map": "/bookify/static/js/main.8725dca4.js.map",
+    "787.f30f0f50.chunk.js.map": "/bookify/static/js/787.f30f0f50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da3089f3.css",
+    "static/js/main.8725dca4.js"
+  ]
+}
